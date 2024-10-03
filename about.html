@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* CSS untuk video background */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Memastikan tinggi penuh */
+            overflow: hidden; /* Menghindari scroll pada halaman */
+            color: white; /* Warna teks default */
+            text-align: center; /* Pusatkan teks */
+        }
+
+        .navbar {
+            position: fixed;
+            z-index: 2; /* Pastikan menu di atas video */
+            width: 100%; /* Mengatur lebar menu */
+            text-align: center; /* Pusatkan teks dalam menu */
+            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+            padding: 10px 0; /* Spasi atas dan bawah */
+        }
+
+        .navbar a {
+            color: white; /* Warna teks menu */
+            margin: 0 15px; /* Spasi antar link */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+        }
+
+        #bg-video {
+            position: fixed; /* Video tetap pada posisi tetap */
+            top: 0; /* Menempatkan video di atas */
+            left: 0; /* Menempatkan video di kiri */
+            width: 100%; /* Memastikan video memenuhi lebar */
+            height: 100%; /* Memastikan video memenuhi tinggi */
+            object-fit: cover; /* Mengatur video agar tidak terdistorsi */
+            z-index: -1; /* Menaruh video di belakang konten */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Menaruh konten di atas video */
+            padding: 20px; /* Spasi sekitar konten */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px; /* Spasi atas untuk tabel */
+        }
+
+        th, td {
+            border: 1px solid white; /* Border putih */
+            padding: 10px; /* Spasi dalam sel */
+            color: black; /* Warna teks untuk judul tabel */
+        }
+
+        td {
+            color: white; /* Warna teks untuk sel */
+        }
+
+        h1, p {
+            color: white; /* Warna teks untuk judul dan paragraf */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="Newzz.html">Newzz</a>
+    </div>
+    
+
+    <video autoplay muted loop id="bg-video">
+        <source src="about.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <!-- Konten di atas video -->
+    <div class="content">
+        <h1>What about me?</h1>
+        <p>My personal identity</p>
+        <table>
+            <tr>
+                <th style="color: black;">Nama</th>
+                <td>Jamotan Tua Sinaga</td>
+            </tr>
+            <tr>
+                <th style="color: black;">Agama</th>
+                <td>/</td>
+            </tr>
+            <tr>
+                <th style="color: black;">Status</th>
+                <td>Pelajar</td>
+            </tr>
+            <tr>
+                <th style="color: black;">Alamat</th>
+                <td>Osaka</td>
+            </tr>
+            <tr>
+                <th style="color: black;">Motto</th>
+                <td>
+                    <h2>"Tarinai no wa shuunyuu demo kyuuryou demo naku daga omae no kansha dake da."
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

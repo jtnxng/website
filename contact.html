@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        /* CSS untuk video background */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Memastikan tinggi penuh */
+            overflow: hidden; /* Menghindari scroll pada halaman */
+        }
+
+        .navbar {
+            position: fixed;
+            z-index: 2; /* Pastikan menu di atas video */
+            width: 100%; /* Mengatur lebar menu */
+            text-align: center; /* Pusatkan teks dalam menu */
+            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+            padding: 10px 0; /* Spasi atas dan bawah */
+        }
+
+        .navbar a {
+            color: white; /* Warna teks menu */
+            margin: 0 15px; /* Spasi antar link */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+        }
+
+        #bg-video {
+            position: fixed; /* Video tetap pada posisi tetap */
+            top: 0; /* Menempatkan video di atas */
+            left: 0; /* Menempatkan video di kiri */
+            width: 100%; /* Memastikan video memenuhi lebar */
+            height: 100%; /* Memastikan video memenuhi tinggi */
+            object-fit: cover; /* Mengatur video agar tidak terdistorsi */
+            z-index: -1; /* Menaruh video di belakang konten */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Menaruh konten di atas video */
+            color: white; /* Warna teks */
+            text-align: center; /* Pusatkan teks */
+            padding: 20px; /* Spasi sekitar konten */
+            height: 200vh; /* Memberikan tinggi lebih untuk scroll */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="Newzz.html">Newzz</a>
+    </div>
+
+    
+    <video autoplay muted loop id="bg-video">
+        <source src="contact.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <!-- Konten di atas video -->
+    <div class="content">
+        <h1>Contact</h1>
+        <p>I need feedback from you!</p>
+        <p> <a href="wa.me/6285270389295"</a>Whatsapp</p>
+    </div>
+</body>
+</html>
