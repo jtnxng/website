@@ -10,6 +10,7 @@
             padding: 0;
             height: 100%; /* Memastikan tinggi penuh */
             overflow: hidden; /* Menghindari scroll pada halaman utama */
+            font-family: Arial, sans-serif; /* Menambahkan font untuk konten */
         }
 
         #menu {
@@ -39,7 +40,6 @@
             padding: 20px; /* Spasi sekitar konten */
             height: 100%; /* Mengatur tinggi konten agar sesuai dengan tinggi viewport */
             overflow-y: auto; /* Tambahkan scroll vertikal jika diperlukan */
-            overflow-x: auto;
         }
 
         #tutor {
@@ -48,7 +48,26 @@
             max-width: 600px; /* Atur lebar maksimum untuk gambar */
             height: auto; /* Sesuaikan tinggi gambar */
         }
-        position: fixed;
+
+        /* CSS untuk menampilkan kode */
+        .code-container {
+            background-color: #222; /* Latar belakang untuk kode */
+            color: #fff; /* Warna teks untuk kode */
+            padding: 20px; /* Spasi dalam kode */
+            border-radius: 5px; /* Sudut melengkung */
+            margin: 20px 0; /* Spasi atas dan bawah untuk kode */
+            overflow: auto; /* Tambahkan scroll jika diperlukan */
+        }
+        #pp
+        {
+            width:50%;
+            height:50%;
+        }
+       #th
+       {
+           width:50%;
+           height:20%;
+       }
     </style>
 </head>
 <body>
@@ -68,11 +87,100 @@
     <div class="content">
         <h1>Welcome to My Website</h1>
         <p>Enjoy the view!</p>
+        <table border="1px">
+            <tr>
+             <th id="th"> <img id="pp" src="pp.jpeg" alt=""></th>
+               <td>Hi <br> its your first time?</td>
+            </tr>
+        </table>                <br>
         <h2>Hi, terimakasih telah berkunjung ke website ini.</h2>
         <h4>Website ini dibuat dengan perangkat android yang sudah pasti memiliki keterbatasan. Oleh karena itu saya meminta kritikan dari anda semua dengan mengeklik tombol contact di atas.</h4>
         <h1>ありがとう Arigatō</h1>
 
         <img id="tutor" src="index.jpeg" alt="">
+
+        <!-- Menampilkan kode HTML di sini -->
+        <div class="code-container">
+            <pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;JtnXngWebsit&lt;/title&gt;
+    &lt;style&gt;
+        /* CSS untuk video background */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Memastikan tinggi penuh */
+            overflow: hidden; /* Menghindari scroll pada halaman utama */
+        }
+
+        #menu {
+            position: fixed;
+            z-index: 2; /* Pastikan menu di atas video */
+            width: 100%; /* Mengatur lebar menu */
+            text-align: center; /* Pusatkan teks dalam menu */
+            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+            padding: 10px 0; /* Spasi atas dan bawah */
+        }
+
+        #bg-video {
+            position: fixed; /* Video tetap pada posisi tetap */
+            top: 0; /* Menempatkan video di atas */
+            left: 0; /* Menempatkan video di kiri */
+            width: 100%; /* Memastikan video memenuhi lebar */
+            height: 100%; /* Memastikan video memenuhi tinggi */
+            object-fit: cover; /* Mengatur video agar tidak terdistorsi */
+            z-index: -1; /* Menaruh video di belakang konten */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1; /* Menaruh konten di atas video */
+            color: white; /* Warna teks */
+            text-align: center; /* Pusatkan teks */
+            padding: 20px; /* Spasi sekitar konten */
+            height: 100%; /* Mengatur tinggi konten agar sesuai dengan tinggi viewport */
+            overflow-y: auto; /* Tambahkan scroll vertikal jika diperlukan */
+        }
+
+        #tutor {
+            margin: 20px 0; /* Spasi atas dan bawah untuk gambar */
+            width: 100%; /* Sesuaikan lebar gambar */
+            max-width: 600px; /* Atur lebar maksimum untuk gambar */
+            height: auto; /* Sesuaikan tinggi gambar */
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;menu&quot;&gt;
+        &lt;a href=&quot;index.html&quot; style=&quot;color:white; margin: 0 15px;&quot;&gt;Home&lt;/a&gt;
+        &lt;a href=&quot;contact.html&quot; style=&quot;color:white; margin: 0 15px;&quot;&gt;Contact&lt;/a&gt;
+        &lt;a href=&quot;about.html&quot; style=&quot;color:white; margin: 0 15px;&quot;&gt;About&lt;/a&gt;
+        &lt;a href=&quot;Newzz.html&quot; style=&quot;color:white; margin: 0 15px;&quot;&gt;Newzz&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;video autoplay muted loop id=&quot;bg-video&quot;&gt;
+        &lt;source src=&quot;bg.mp4&quot; type=&quot;video/mp4&quot;&gt;
+        Your browser does not support the video tag.
+    &lt;/video&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;p&gt;Enjoy the view!&lt;/p&gt;
+        &lt;h2&gt;Hi, terimakasih telah berkunjung ke website ini.&lt;/h2&gt;
+        &lt;h4&gt;Website ini dibuat dengan perangkat android yang sudah pasti memiliki keterbatasan. Oleh karena itu saya meminta kritikan dari anda semua dengan mengeklik tombol contact di atas.&lt;/h4&gt;
+        &lt;h1&gt;ありがとう Arigatō&lt;/h1&gt;
+
+        &lt;img id=&quot;tutor&quot; src=&quot;index.jpeg&quot; alt=&quot;&quot;&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+            </pre>
+        </div>
     </div>
 </body>
 </html>
