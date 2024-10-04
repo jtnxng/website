@@ -69,6 +69,19 @@
            height:20%;
        }
     </style>
+    <script>
+        // Fungsi untuk menampilkan popup dengan tombol Ya dan Tidak saat halaman dibuka
+window.onload = function() {
+    var result = confirm("Selamat datang di JtnXngWebsit! Apakah Anda ingin melanjutkan?");
+    if (result) {
+        // Jika pengguna memilih "Ya"
+        alert("Anda memilih 'Ya'. Selamat datang!");
+    } else {
+        // Jika pengguna memilih "Tidak"
+        alert("Anda memilih 'Tidak'. Semoga hari Anda menyenangkan!");
+    }
+};
+    </script>
 </head>
 <body>
     <div id="menu">
